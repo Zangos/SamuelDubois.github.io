@@ -1,0 +1,280 @@
+/*le css global*/
+/*définition des polices */
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*mise en place des couleur et des polices */
+body
+{
+	background: url('images/gris.png');
+	font-family :  Arial,sans-serif;
+	padding: 300 px;
+
+}
+
+#le_contenu_nouveau
+{
+	font-family : Arial, sans-serif;
+	font-size: 100%;
+	width : 75%;
+
+	margin : auto ;
+	padding-left: 5%;
+	padding-right: 20px;
+
+	background-color: white;
+	
+	position: relative;
+	top: 250px;
+	padding-right: 0px;
+	box-shadow: 0px 4px 15px #1c1a19;
+
+
+}
+
+#le_contenu_nouveau h1
+{
+	font-family : Dayrom,'Trebuchet MS', Arial, serif;
+	font-weight: bold;
+	font-size: 300%;
+	border-bottom: 2px solid #760001;/*ça ne fonctionne pas pour une raison qui m'échappe */
+}
+
+#le_contenu_nouveau h2
+{
+	font-family : Dayrom,'Trebuchet MS', Arial, serif;
+	font-size: 120%;
+}
+/*alignement du haut de page */
+#Mon_Nom
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: black;
+	color: white;
+}
+
+/*alignement du menu de selection et petite modif graphique */
+li 
+{
+ margin-left:5%;
+ float:left; 
+ list-style-type:none;
+ }
+ul li a 
+{
+ display:block;
+ float:left;  
+}
+nav a
+{
+
+	color: #181818;
+	margin-left: auto;
+	font-size: 150%;
+	padding-bottom: 3px;
+	
+	text-decoration:none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+#image_projet :hover
+{
+	border-bottom: 3px solid #760001;
+}
+
+header
+{
+	background-color: red;/*ça ne fonctionne pas pour une raison qui m'échappe */
+	padding-bottom: 10%;
+	margin-bottom: 3%;
+	position: fixed;	
+	width: 100%;
+	z-index:2;
+	height: 30px;
+
+}
+
+a
+{
+	color: #181818;
+	text-decoration:none;
+}
+
+/*la page centrale blanche, reduite et centrée sur laquel vont se déroler les articles*/
+#page_centree
+{
+	display: flex;
+
+}
+
+/*la bande sur le côté gauche */
+aside
+{
+	position:relative;
+	top:250px;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+	height:50%;
+	width: 300px;
+	margin-left: 5%;
+}
+aside img
+{
+    margin-right: 5px;
+}
+aside a
+{
+	color: white;
+	text-decoration: none;
+}
+#image_moi
+{
+	width: 175px;
+	height: 158px;
+	margin-left: 10%;
+	box-shadow: 0px 2px 5px #1c1a19;
+}
+
+/*image pour la page d'acceuil*/
+.imagepouraccueil
+{
+	float: right;
+}
+.imagepouraccueilr
+{
+	float: left;
+}
+.dessous_image
+{
+	clear: both
+}
+/*page de tous les projets*/
+#projets
+{
+	display: flex;
+    flex-wrap: wrap;
+	z-index:1;
+
+
+	font-family : Arial, sans-serif;
+	font-size: 100%;
+	width : 75%;
+
+	margin : auto ;
+	padding-left: 5%;
+	padding-right: 20px;
+
+	background-color: white;
+	
+	position: relative;
+	top: 270px;
+	padding-right: 0px;
+	box-shadow: 0px 4px 15px #1c1a19;
+
+
+
+}
+#projets h1
+{
+	border-top:3px solid #760001;
+	width: 100%;
+}
+
+
+
+/* page de chaque projets*/
+#les_projets
+{
+	flex-direction: coloumn;
+		z-index:1;
+
+
+	font-family : Arial, sans-serif;
+	font-size: 100%;
+	width : 75%;
+
+	margin : auto ;
+	margin-left:5%;
+	padding-left: 5%;
+	padding-right: 20px;
+
+	background-color: white;
+	
+	position: relative;
+	top: 220px;
+	padding-right: 0px;
+	box-shadow: 0px 4px 15px #1c1a19;
+}
+#les_projets a :hover
+{
+	border-bottom : 2px solid blue;
+}
+#contact
+{
+
+	z-index:1;
+
+
+	font-family : Arial, sans-serif;
+	font-size: 100%;
+	width : 75%;
+
+	margin : auto ;
+	margin-left:5%;
+	padding-left: 5%;
+	padding-right: 20px;
+
+	background-color: white;
+	
+	position: relative;
+	top: 90px;
+	padding-right: 0px;
+	box-shadow: 0px 4px 15px #1c1a19;
+}
+#contact h1
+{
+	border-bottom:3px solid #760001;
+}
+#projets_side
+{
+	position:relative;
+	top:250px;
+    background-color: white;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+	margin-right: 5%;
+    font-size: 0.9em;
+	height:550px;
+	width: 400px;
+	margin-left: 5%;
+	overflow: scroll;
+}
+
+article
+{
+	font-size: 1.5em;
+}
